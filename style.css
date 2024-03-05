@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Ubuntu:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333; /* Changed color to improve readability */
+    font-family: 'Poppins', sans-serif; /* Changed to Poppins as primary font */
+}
+
+.navbar {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+      
+    li {
+        float: left;
+    }
+      
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+      
+    li a:hover {
+        background-color: #111;
+    }
+    
+    background-color: rgb(22, 7, 36);
+}
+
+.left h1 {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+#home {
+    width: 80%;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.leftHome {
+    width: 500px;
+}
+
+.leftHome h3 {
+    color: #de2639;
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+    text-transform: uppercase;
+}
+
+.leftHome h2 {
+    color: rgb(26, 25, 25);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.desc {
+    margin-bottom: 1rem;
+    color: rgb(106, 102, 102);
+}
+
+.rightHome {
+    width: 50%;
+    margin: 1rem;
+    position: relative;
+}
+
+a {
+    color: #de2639;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #de2639;
+    text-decoration: underline;
+}
+
+.btn {
+    cursor: pointer;
+    color: #de2639;
+    font-weight: bold;
+    border-radius: 3rem;
+    padding: .7rem 1.5rem;
+    text-transform: uppercase;
+    border: 1.5px solid #de2639;
+    background-color: transparent;
+}
+
+@media screen and (max-width:810px) {
+    #home {
+        flex-direction: column-reverse;
+    }
+
+    .rightHome {
+        width: 90%;
+    }
+
+    .leftHome {
+        margin: 0;
+        width: 100%;
+    }
+    
+    .leftHome h3 {
+        font-size: 1.2rem; /* Adjusted font size */
+    }
+
+    .leftHome h2 {
+        font-size: 2rem;
+    }
+    
+    .btn {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.video-container {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.video-container iframe {
+    display: block;
+    width: 100%;
+    height: 460px; /* Adjusted height value */
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
